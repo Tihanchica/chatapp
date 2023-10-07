@@ -7,7 +7,7 @@
 
 .chat_app-inner {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .App-logo {
@@ -22,25 +22,41 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fa9bda;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(247, 202, 227);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes dash {
   from {
-    transform: rotate(0deg);
+    stroke-dashoffset: 1000;
   }
   to {
-    transform: rotate(360deg);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes reverse-dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

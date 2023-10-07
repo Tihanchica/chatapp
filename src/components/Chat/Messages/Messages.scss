@@ -1,6 +1,6 @@
 .messages_area {
   overflow-y: scroll;
-  height: 450px;
+  height: 500px;
   width: 100%;
   padding: 5px 20px;
 
@@ -26,11 +26,12 @@
 
       &.message_by_me {
         margin-left: auto;
-        background: green;
+        background: rgb(179, 30, 129);
+        display: flex;
       }
 
       &.message_by_other {
-        background: rgb(103, 94, 104);
+        background: rgb(223, 72, 240);
       }
 
       &.member_joined_left {
