@@ -3,7 +3,7 @@ import UserContext from "../context/UserContext";
 import Chat from "../Chat/Chat";
 import Login from "../Login/Login";
 
-const CHANNEL_ID = "iwOOeHaaMcpKih7I";
+const CHANNEL_ID = "JlKd1QDaVhvfagi4";
 
 const ChatApp = () => {
   const [user, setUser] = useState("");
